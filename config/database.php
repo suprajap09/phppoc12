@@ -3,10 +3,10 @@ include("config/core.php");
 Class dbObj{
 	
 	// specify your own database credentials
-	var $servername = "ec2-54-83-1-94.compute-1.amazonaws.com";
-	var $username = "trtclzwzsolgjp";
-	var $password = "67390df03544f17e1db60bdb91c8650501d56f0c4b5267b475d3408ce47315e8";
-	var $dbname = "dduntehkvcp8cu";
+	var $servername = "ec2-54-235-90-200.compute-1.amazonaws.com";
+	var $username = "iyizcwyllniyol";
+	var $password = "651e46d888978d82218887e33331ce58571e2e8d962080d41a90e67b8d0bb2ce";
+	var $dbname = "dbsvd7rdbhtvq4";
 	var $port = "5432";
 	var $conn;
 	var $sslmode= "require";
