@@ -1,19 +1,5 @@
 {
-  
-	"authors": [
-		{
-			"name": "supraja paladugu",
-			"email": "spaladugu@rehrig.com"
-		}
-	],
-	"bin": [
-		"bin/heroku-hhvm-apache2",
-		"bin/heroku-hhvm-nginx",
-		"bin/heroku-php-apache2",
-		"bin/heroku-php-nginx"
-	]
-
-  "require-dev": {
+    "require-dev": {
     "heroku/heroku-buildpack-php": "*"
   }
 }
