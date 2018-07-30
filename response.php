@@ -53,8 +53,8 @@ class Dbdata {
 		// sanitize
 		$token=trim($token);
  		$createddate=date('Y-m-d h:i:s');
-        $token_expire=date('Y-m-d H:i',strtotime('5 minutes',strtotime($createddate)));			
-		pg_query("INSERT INTO public.token(token, token_expire, createddate) VALUES('".$token."', '".$token_expire."', '".$createddate."')");
+        $token_expire=date('Y-m-d H:i:s',strtotime('5 minutes',strtotime($createddate)));			
+		pg_query($this->conn,"INSERT INTO public.token(token, token_expire, createddate) VALUES('".$token."', '".$token_expire."', '".$createddate."')");
 	}
 	
 	/*
