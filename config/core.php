@@ -3,6 +3,7 @@
   //0 for hide warning errors
   //1 for show all warning errors
 ini_set('display_errors', 0);
+ini_set('memory_limit', '-1');
 error_reporting(E_ALL);
  
  // Start session
