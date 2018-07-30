@@ -2,13 +2,21 @@
 Class dbObj{
 	
 	// specify your own database credentials
-	var $servername = "ec2-54-235-90-200.compute-1.amazonaws.com";
-	var $username = "iyizcwyllniyol";
-	var $password = "651e46d888978d82218887e33331ce58571e2e8d962080d41a90e67b8d0bb2ce";
-	var $dbname = "dbsvd7rdbhtvq4";
-	var $port = "5432";
+	var $servername;
+	var $username;
+	var $password;
+	var $dbname;
+	var $port;
 	var $conn;
-	var $sslmode= "require";
+	var $sslmode;
+	function __construct() {
+		$this->servername = getenv('servername');
+		$this->username = getenv('username');
+		$this->password = getenv('password');
+		$this->dbname = getenv('dbname');
+		$this->port = getenv('port');
+		$this->sslmode = getenv('sslmode');
+	}
 	
 	  /*
 	 Function Name: getConnstring
